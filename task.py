@@ -1,6 +1,9 @@
 import math
 import unittest
 
+def absolute_value(x):
+    return math.fabs(x)
+
 class TestAbsoluteValueFunction(unittest.TestCase):
     
     def test_positive_number(self):
