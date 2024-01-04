@@ -2,6 +2,9 @@ import math
 import unittest
 
 def absolute_value(x):
+    if not isinstance(x, (int, float)):
+        raise TypeError(f"Number must be a numeric type - int/float but is {type(x)}")
+    
     return math.fabs(x)
 
 class TestAbsoluteValueFunction(unittest.TestCase):
